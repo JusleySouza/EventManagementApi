@@ -10,6 +10,8 @@ import javax.persistence.MappedSuperclass;
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @MappedSuperclass
 public class AbstractEntity {
 
@@ -17,7 +19,7 @@ public class AbstractEntity {
 	@Column(nullable = false, updatable = false)
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	protected Long id;
-
+	@JsonIgnore
 	@CreationTimestamp
 	@Column(updatable = false)
 	protected Instant created;
