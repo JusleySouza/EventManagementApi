@@ -1,9 +1,9 @@
 package com.ju.eventmanagement.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
 import com.ju.eventmanagement.entities.Event;
 
-public interface EventRepository extends CrudRepository<Event, Long> {
+public interface EventRepository extends PagingAndSortingRepository<Event, Long> {
 
 }
