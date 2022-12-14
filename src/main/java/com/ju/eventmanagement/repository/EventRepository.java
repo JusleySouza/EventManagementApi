@@ -19,7 +19,7 @@ public interface EventRepository extends PagingAndSortingRepository<Event, Long>
 	
 	Page<Event> findByNameAndZoneId(@Param("name") String name, @Param("zoneId") ZoneId zoneId, Pageable pageable );
 	
-	@PreAuthorize("hasRole('ROLE_ADMIN')")
-	void delete(Long id);
-	
+//	@PreAuthorize("hasRole('ROLE_ADMIN')")
+//	void delete(Long id);
+
 }
