@@ -14,7 +14,6 @@ import com.ju.eventmanagement.entities.Participant;
 import com.ju.eventmanagement.repository.ParticipantRepository;
 
 @RepositoryRestController
-@RequestMapping("/events")
 public class CheckInController {
 	
 	@Autowired
