@@ -12,7 +12,6 @@ import com.ju.eventmanagement.entities.Event;
 import com.ju.eventmanagement.repository.EventRepository;
 
 @RepositoryRestController
-@RequestMapping("/events")
 public class EventKickOffController {
 	
 	@Autowired
